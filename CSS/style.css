@@ -1,6 +1,4 @@
-/* styles.css */
-
-.ancestor .contents {
-  color: blueviolet;
-  /* some declarations */
+h1 {
+  color: brown;
+  background-color: darkcyan;
 }
