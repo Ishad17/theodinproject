@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Examples</title>
+    <style>
+        .new.child {
+            font-weight: bold;
+            font-size: smaller;
+            color: red;
+        }
+
+        .child {
+            font-weight: bold;
+            font-size: smaller;
+            color: green;
+        }
+
+        .new {
+            font-weight: bold;
+            font-size: smaller;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">I'm a div with thin text!</div>
+
+    <div class="text">I'm a div with thin text and a child div!
+        <div class="new child">I'm a smaller child div with extra bold text.</div>
+    </div>
+
+    <div class="child">I'm another div with the class "child."</div>
+
+    <div class="new">I'm another div with the class "new."</div>
+</body>
+</html>
