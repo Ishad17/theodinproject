@@ -1,4 +1,10 @@
-h1 {
-  color: brown;
-  background-color: darkcyan;
+/* styles.css */
+
+.ancestor .contents {
+  color: blueviolet;
+  /* some declarations */
+}
+
+body{
+  background-color: cadetblue;
 }

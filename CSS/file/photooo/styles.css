@@ -1,22 +1,38 @@
-.class.second-class {
-  font-size: 12px;
-  color: blue;
+body{
+  background-color: rgb(20, 67, 69);
 }
-
-/* rule 2 */
-.class > .second-class {
-  font-size: 54px;
-  color: coral;
-}
-
-
-/* rule 1 */
-* {
-  color: black;
-}
-
-/* rule 2 */
 h1 {
-  color: orange;
-}
+    /* hex example: */
+    color: #472c15;
+    background-color: cadetblue;
+    font-family: "Arial", "Times New Roman", serif;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: bold;
+    font-weight: 700
+  }
+  
+  li {
+    /* rgb example: */
+    color: rgb(9, 90, 9);
+    font-size: x-large;
+    background-color: yellowgreen;
+  }
+  
+  p {
+    /* hsl example: */
+    color: hsl(0, 97%, 47%);
+    font-size: xx-large;
+  }
 
+ h2 {
+    color: rgb(61, 9, 109);
+    background-color: rgba(187, 214, 236, 0.973);
+} 
+
+
+img {
+    height: auto;
+    width: 300px;
+  }
+ 
