@@ -8,13 +8,261 @@
 </head>
 <body>
 <script>
+///////////////////
+
+const strings = ["String1", "String2", "String3","Khan","Fan"];
+console.log(strings[4]);
+
+let num1 = Number(prompt("Enter 1st number"))           // 23   
+let num2 = Number(prompt("Enter 2nd number"))             //12
+let num3 = Number(prompt("Enter 3rd number"))           //45
 
 
-let ask = (question, yes, no) => {
-  return confirm(question) ? yes() : no();
-};
+function bigNumber(){
+        if(num1 < num3 && num2 < num3){    
+            console.log("1. ", num1,num2,num3)
+                    return console.log(num3 + ' is the Biggest number')
+        }else if(num1 > num3 && num1 > num2){
+            console.log("2. ", num1,num2,num3)
+                    return console.log(num1 + ' is th Biggest number')
+        }else if(num2 > num3 && num2 > num1){
+            console.log("3. ", num1,num2,num3)
+                    return console.log(`${num2} is the biggest number`)
+        }
+    }
+    
+bigNumber();
 
-ask("Do you agree?", () => alert("You agreed"), () => alert("You cancelled the execution"));
+
+// function bigNo(){
+//     if (num1 > num2){
+//         console.log(num1, num2)
+//         console.log(`1st number is the big one` )
+//     }else if (num1 < num2){
+//         console.log(num1, num2)
+//         console.log(`2nd number is the big one` )
+//     }
+//     else if (num1 == num2){
+//         console.log(`both are equal` )
+//     }
+
+// }
+
+// bigNo();
+
+
+///////////////////
+
+// console.log('hello')
+// // Function to find the third highest number in an array
+// function findThirdHighest(numbers) {
+//     if (numbers.length < 3) {
+//         throw new Error("Array should contain at least 3 numbers.");
+//     }
+    
+//     // Sort the array in descending order
+//     numbers.sort((a, b) => b - a);
+
+//     // Return the third highest number
+//     return numbers[2];
+// }
+
+// // Array to store the numbers
+// let numbers = [];
+
+// // Prompt user to enter 10 numbers
+// for (let i = 0; i < 10; i++) {
+//     let num = parseFloat(prompt(`Enter number ${i + 1}:`));
+//     numbers.push(num);
+// }
+
+// try {
+//     // Find and display the third highest number
+//     let thirdHighest = findThirdHighest(numbers);
+//     console.log(`The third highest number is: ${thirdHighest}`);
+// } catch (error) {
+//     console.error(error.message);
+// }
+
+// console.log('END');
+
+
+/////////////////////
+
+
+// When a user inputs a number
+// Loop from 1 to the entered number
+// If the current number is divisible by 3 then print "Fizz"
+// If the current number is divisible by 5 then print "Buzz"
+// If the current number is divisible by 3 and 5 then print "FizzBuzz"
+// Otherwise print the current number
+
+
+
+// console.log("//////// Ishad's FIZZ BUZZ \\\\\\\\\\")
+
+// // Ask the user for a number
+// let userInput = prompt("Enter a number to count to:");
+
+// // Convert the input to an integer and check if it's a valid number
+// if (isNaN(parseInt(userInput))) {
+//   console.log("Please enter a valid number.");
+// } else {
+//   // Convert the input to an integer only after ensuring it's a valid number
+//   let countTo = parseInt(userInput);
+  
+//   // Loop from 1 to the user's input and log each number
+//   for (let i = 1; i <= countTo; i++) {
+//         if(i % 3 === 0 && i % 5 === 0){
+//             console.log('FizzBuzz')
+//         }else if(i % 5 === 0 ){
+//             console.log('Buzz')
+//         }else if(i % 3 === 0 ){
+//             console.log('Fizz')
+//     }else{
+//             console.log(i);
+//         }
+//     }
+// }
+// ///////////////////
+
+// console.log('End of Fizz Buzz')
+
+//////////////////////////
+
+
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes();
+//   else no();
+// }
+
+
+
+// let ask = (question, yes, no) => {confirm(question) ? yes() : no()}
+
+// ask(  "Do you agree?",  () =>  alert("You agreed.") , () => alert("You canceled the execution."));
+
+
+
+// function multiply(a){
+//         return a * 2
+// }
+
+// console.log(multiply(10));
+
+
+// ////////////////////////////////////////////////////////////////////
+
+
+// var foo = "Foo";
+// let bar = "Bar";
+
+// var moo = "Mooo"
+//     let baz = "Bazz";
+
+
+// function run() {
+//   var foo = "Foo";
+//   let bar = "Bar";
+
+//   console.log(foo, bar); // Foo Bar
+
+//   {
+//     console.log(moo, baz); // Mooo Bazz
+//   }
+
+//   console.log(moo); // Mooo
+//   console.log(baz); // ReferenceError
+// }
+
+// run();
+
+
+// //////////////////////////////////////////
+
+// function add7(a){
+//     return a + 7 
+// }
+
+// console.log(add7(10));
+
+
+// /////////////////////////////
+// function capitalize(textInput){
+
+
+//     resultText = textInput.charAt(0).toUpperCase() + textInput.slice(1).toLowerCase();
+
+//     return console.log(resultText)
+
+// }
+
+// // capitalize(prompt('Input text here..'));
+
+
+
+// function lastLetter(textInput){
+
+
+// resultText = textInput.slice(-1).toUpperCase();
+
+// return console.log(resultText)
+
+// }
+
+// // lastLetter(prompt('Input text here..'));
+
+
+
+// /////////////////////////////////////////////////////////////////////
+// function addd(a,j){
+
+//     return console.log(a + j + " is the answer")
+// }
+
+// addd(49,12)
+
+// ///////////////////////////////////////////////////////////////////
+
+
+// // let double = n => n * 2;
+
+// // // roughly the same as: let double = function(n) { return n * 2 }
+
+// // alert( double(3) ); // 6
+
+
+
+// // let age = prompt("What is your age?", 18);
+
+// // let welcome = (age < 18) ?  () => alert('Hello!') :  () => alert("Greetings!");
+
+// // welcome();
+
+
+// let asge = prompt("What is your age?", 18);
+
+// let weslcome = (age < 18) ?  function() { alert("Hello!"); } : function() { alert("Greetings!"); };
+
+// welcome(); // ok now
+
+
+
+// let sum = (a, b) => a + b;
+
+// alert( sum(1, 2) ); // 3
+
+
+
+
+
+
+
+// let ask = (question, yes, no) => {
+//   return confirm(question) ? yes() : no();
+// };
+
+// ask("Do you agree?", () => alert("You agreed"), () => alert("You cancelled the execution"));
 
 
 

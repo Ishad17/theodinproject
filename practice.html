@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+        h1{
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissor Game</h1>
+    
+    <p> This is project in TOP. I tried my best to get the best possible output.
+        <br>You can see the output's in your browser's console panel.
+    </p>
+
+<script>
+
+    console.log('Rock Paper Scissor')
+
+    let options = prompt('Your Turn:')
+    // let options = 'Rock';
+
+    let userInput = options.toUpperCase().toString();
+
+
+    let computerInpu = ['ROCK', 'PAPER', 'SCISSOR'];
+
+    let randomIndex = Math.floor(Math.random() * computerInpu.length);
+
+    console.log(randomIndex);
+
+    let computerInput = computerInpu[randomIndex];
+    console.log('Computer:',computerInput);
+    console.log('You:',userInput);
+
+    let humanScore = 0;
+    let computerScore = 0;
+
+
+
+    function result(){
+      
+        if (computerInput == userInput){
+            console.log("Match Draw!")
+        }
+        else if(computerInput > userInput){
+            console.log('It\'s a point')
+            computerScore++
+        }else if(userInput > computerInput) {
+            console.log('It\'s a point for user')
+            humanScore++
+        }
+
+        console.log("Your Score:" , humanScore);
+        console.log("Computer Score:" , computerScore);
+    }
+    
+
+    result();
+    result();
+    result();
+    result();
+    result();
+
+</script>
+
+</body>
+
+</html>
