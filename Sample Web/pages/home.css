@@ -1,0 +1,100 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid red;
+  }
+  
+  /* Background image for the hero section */
+  body {
+    background-image: url('../images/pexels-david-besh-884788.jpg'); /* Replace with your own image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  /* Styles for the navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-item {
+    position: relative;
+  }
+  
+  .navbar-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  .navbar-link:hover, .dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Styles for dropdown menus */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Dropdown background */
+    display: none;
+    flex-direction: column;
+    min-width: 160px;
+  }
+  
+  .dropdown-menu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-item:hover .dropdown-menu {
+    display: flex;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding-top: 60px; /* Offset for fixed navbar */
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  

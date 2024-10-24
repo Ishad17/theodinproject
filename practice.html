@@ -20,54 +20,151 @@
         <br>You can see the output's in your browser's console panel.
     </p>
 
-<script>
+
+<!-- <script>
 
     console.log('Rock Paper Scissor')
 
-    let options = prompt('Your Turn:')
-    // let options = 'Rock';
-
-    let userInput = options.toUpperCase().toString();
-
-
-    let computerInpu = ['ROCK', 'PAPER', 'SCISSOR'];
-
-    let randomIndex = Math.floor(Math.random() * computerInpu.length);
-
-    console.log(randomIndex);
-
-    let computerInput = computerInpu[randomIndex];
-    console.log('Computer:',computerInput);
-    console.log('You:',userInput);
 
     let humanScore = 0;
     let computerScore = 0;
+    let countRound = 0;
+
+       function rounds(){ 
 
 
+            function userValue(){
 
-    function result(){
-      
-        if (computerInput == userInput){
+                countRound++
+                console.log('Round: ',countRound);
+
+    
+            let options = prompt(`Your Turn (${countRound}/10): Input 'Rock', 'Paper' or 'Scissor'`)
+            // let options = 'Rock';
+            let userInput = options.toUpperCase().toString();                
+
+                if(userInput != 'ROCK' && userInput != 'PAPER' && userInput != 'SCISSOR'){
+                    console.log('Wrong Input')
+                    let options = prompt("Wrong input! Input ROCK, PAPER OR SCISSOR : ")
+                }
+                
+
+                let computerInpu = ['ROCK', 'PAPER', 'SCISSOR'];
+
+                let randomIndex = Math.floor(Math.random() * computerInpu.length);
+
+
+                let computerInput = computerInpu[randomIndex];
+                console.log('You:',userInput);
+                console.log('Computer:',computerInput);
+
+
+                        
+        if (
+            (computerInput == 'ROCK' && userInput == 'ROCK') ||
+            (computerInput == 'PAPER' && userInput == 'PAPER') ||
+            (computerInput == 'SCISSOR' && userInput == 'SCISSOR')
+        ){
             console.log("Match Draw!")
         }
-        else if(computerInput > userInput){
-            console.log('It\'s a point')
-            computerScore++
-        }else if(userInput > computerInput) {
-            console.log('It\'s a point for user')
+        else if (
+            (computerInput == 'ROCK' && userInput == 'PAPER') ||
+            (computerInput == 'PAPER' && userInput == 'SCISSOR') ||
+            (computerInput == 'SCISSOR' && userInput == 'ROCK')
+        )
+        {
+            console.log('It\'s a point for User')
             humanScore++
+        }else if(
+
+            (computerInput == 'SCISSOR' && userInput == 'PAPER') ||
+            (computerInput == 'ROCK' && userInput == 'SCISSOR') ||
+            (computerInput == 'PAPER' && userInput == 'ROCK')
+
+        ) {
+            console.log('It\'s a point for computer')
+            computerScore++
+        }else{
+            console.log('Your keep making Invalid inputs! Points for Computer');
+            computerScore++
         }
 
         console.log("Your Score:" , humanScore);
         console.log("Computer Score:" , computerScore);
-    }
-    
 
-    result();
-    result();
-    result();
-    result();
-    result();
+
+
+
+            }
+
+            userValue();
+
+    } 
+
+    for (let i = 0; i < 10; i++) {
+  rounds();
+
+}
+
+
+if(humanScore > computerScore){
+    console.log('You win!')
+  }else if(computerScore > humanScore){
+    console.log('Computer Wins!')
+  }else{
+    console.log("It's a draw!")
+  }
+
+
+
+
+//    loop
+
+
+
+
+    // // function result(){
+      
+ 
+    // // }
+
+
+    // // function rounds(){
+
+    // // result();
+    // // result();
+    // // result();
+    // // result();
+    // // result();
+
+
+        
+
+    // }
+
+</script> -->
+
+<script>
+
+let count = 5;
+
+let counts =  
+
+console.log(count); // Output: 5
+
+let result = count++; // result is set to 5, and then count is incremented to 6
+
+console.log(count); // Output: 6
+
+console.log(result); // Output: 5
+
+console.log('meow')
+let text1 = +"34"; 
+console.log(text1);
+
+
+
+
 
 </script>
 
